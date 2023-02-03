@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ahmed Maher">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <header class="py-4 ps-2 border-bottom border-secondary">
+        <div class="container">
+            <h1>Bookmarker</h1>
+        </div>
+</header>
+<div class="container">
+    <div class="well">
+        <div class="column py-5 bg-opacity-10">
+            <h2>Bookmark your favorite sites</h2>
+            <label class="form-label m-3" for="siteName">Site Name</label>
+            <input class="form-control mb-3" id="siteName" placeholder="Bookmark Name" type="text" required>
+            <p class="alert alert-error m-auto d-none" id="nameError">Name is required</p>
+            <label class="form-label m-3" for="siteUrl">Site URL</label>
+            <input class="form-control mb-3" id="siteUrl" placeholder="Website URL" type="text">
+            <p class="alert alert-error m-auto d-none" id="urlError">Url Field is required</p>
+            <div class="m-auto">
+                <button class="btn btn-primary mt-3" onclick="addBookmark();">Submit</button>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+</div>
+    
+<div class="container">
+    <div id="bookmarkList" class="column gap-2 bookList edit">
+        <!-- edited data -->
+        
+
+    </div>
+</div>
+<footer class="py-4 ps-3 border-top border-secondary">
+    <h6 class="text-muted fw-bold">&copy; 2022 Bookmarker Inc.</h6>
+ </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
